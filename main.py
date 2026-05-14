@@ -149,5 +149,5 @@ def reset_user_state(user_id):
         send_message(user_id, "Ваши ожидания сброшены. Вы снова можете получить ответ через 3 минуты.")
 
 # ЗАПУСК
-if name == "__main__":
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
