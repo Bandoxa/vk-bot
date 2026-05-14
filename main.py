@@ -150,24 +150,6 @@ def reset_user_state(user_id):
 
 # ЗАПУСК
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
-@app.route('/', methods=['POST'])
-def handle_webhook():
-    data = request.json
-    
-    if data['type'] == 'confirmation':
-        return "118abff8"
-    
-    if data['type'] == 'message_new':
-        user_message = data['object']['message']['text']
-        user_id = data['object']['message']['from_id']
-        
-        # Простой ответ
-        answer = f"Ты написал: {user_message}"
-        
-        # Отправить ответ через VK API
-        send_message(user_id, answer)
-        
-        return 'ok'
-    
-    return 'ok'
+    import os
+port = int(os.environ.get('PORT", 10000))
+app.run(host="0.0.0.0", port=port)
