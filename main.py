@@ -7,10 +7,10 @@ import json
 import os
 
 # ТОКЕН VK
-TOKEN = "СЮДА_ВСТАВЬ_ТОКЕН"
+TOKEN = "vk1.a.fytAHLvQ-ROFp2XtEZ6bo0QFUzcSJANaeO47wd-L47rkEYQ6ueaXyYFlNGEl9YUvh3BYkQsrq4Z_jXF_n2U5jNBsDhNDwdf21gqfMxfFT2Wbv88YEFsxZWTRUrSS_GwZle8vNCH8PqVDchoCA8i_FRr1DAAenIPXLtAo7-kdEexDaCvf6C6H_6UQ-aAqutGJJuQMwcAMNwB8zKG8UA_uUA"
 
 # СТРОКА ПОДТВЕРЖДЕНИЯ
-CONFIRMATION_TOKEN = "123456"
+CONFIRMATION_TOKEN = "118abff8"
 
 # ПОДКЛЮЧЕНИЕ VK API
 vk_session = vk_api.VkApi(token=TOKEN)
